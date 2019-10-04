@@ -1,0 +1,34 @@
+main.pbi: \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\rccregisters.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\gpiocregisters.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\register.hpp \
+  C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\stdint.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstdint \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\registertype.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\registerbase.hpp \
+  C:\Programs\IAR\ Arm\arm\inc\c\assert.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cassert \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\registerfield.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\Common\susudefs.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\accessmode.hpp \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xtr1common \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\initializer_list \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product_stdlib.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\stdlib.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstdlib \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xstddef \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\type_traits \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\fieldvaluebase.hpp \
+  C:\Programs\IAR\ Arm\arm\inc\c\ysizet.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Defaults.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\yvals.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\stddef.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstddef \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\fieldvalue.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\gpioafieldvalues.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\gpioaregisters.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\main.cpp
