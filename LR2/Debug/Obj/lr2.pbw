@@ -19437,30 +19437,30 @@
     },
     "members": [
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@RCC_AHBENR_GPIOCEN_Values@Value0",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@RCC_AHBENR_GPIOCEN_Values@Disable",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value0",
+        "display": "Disable",
         "location": {
           "column": "9",
           "line": "587",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\rccfieldvalues.hpp"
         },
-        "name": "Value0",
+        "name": "Disable",
         "origin": "user_include",
         "scope": "RCC_AHBENR_GPIOCEN_Values"
       },
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@RCC_AHBENR_GPIOCEN_Values@Value1",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@RCC_AHBENR_GPIOCEN_Values@Enable",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value1",
+        "display": "Enable",
         "location": {
           "column": "9",
           "line": "588",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\rccfieldvalues.hpp"
         },
-        "name": "Value1",
+        "name": "Enable",
         "origin": "user_include",
         "scope": "RCC_AHBENR_GPIOCEN_Values"
       }
@@ -30326,58 +30326,58 @@
     },
     "members": [
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Value0",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Input",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value0",
+        "display": "Input",
         "location": {
           "column": "9",
           "line": "18",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\gpiocfieldvalues.hpp"
         },
-        "name": "Value0",
+        "name": "Input",
         "origin": "user_include",
         "scope": "GPIOC_MODER_MODER_Values"
       },
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Value1",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Output",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value1",
+        "display": "Output",
         "location": {
           "column": "9",
           "line": "19",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\gpiocfieldvalues.hpp"
         },
-        "name": "Value1",
+        "name": "Output",
         "origin": "user_include",
         "scope": "GPIOC_MODER_MODER_Values"
       },
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Value2",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Alternate",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value2",
+        "display": "Alternate",
         "location": {
           "column": "9",
           "line": "20",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\gpiocfieldvalues.hpp"
         },
-        "name": "Value2",
+        "name": "Alternate",
         "origin": "user_include",
         "scope": "GPIOC_MODER_MODER_Values"
       },
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Value3",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_MODER_MODER_Values@Analog",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value3",
+        "display": "Analog",
         "location": {
           "column": "9",
           "line": "21",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\gpiocfieldvalues.hpp"
         },
-        "name": "Value3",
+        "name": "Analog",
         "origin": "user_include",
         "scope": "GPIOC_MODER_MODER_Values"
       }
@@ -30630,30 +30630,30 @@
     },
     "members": [
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_ODR_ODR_Values@Value0",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_ODR_ODR_Values@Disable",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value0",
+        "display": "Disable",
         "location": {
           "column": "9",
           "line": "59",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\gpiocfieldvalues.hpp"
         },
-        "name": "Value0",
+        "name": "Disable",
         "origin": "user_include",
         "scope": "GPIOC_ODR_ODR_Values"
       },
       {
-        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_ODR_ODR_Values@Value1",
+        "ID": "c:@ST>5#T#Ni#Ni#T#T@GPIOC_ODR_ODR_Values@Enable",
         "What": "TypeAliasDecl",
         "defdec": "Def",
-        "display": "Value1",
+        "display": "Enable",
         "location": {
           "column": "9",
           "line": "60",
           "path": "D:\\kraizette\\STD\\VII\\POIP\\PROJECTS\\LR2\\AbstractHardware\\Registers\\STM32F411\\FieldValues\\gpiocfieldvalues.hpp"
         },
-        "name": "Value1",
+        "name": "Enable",
         "origin": "user_include",
         "scope": "GPIOC_ODR_ODR_Values"
       }

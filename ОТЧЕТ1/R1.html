@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.8.dev">
-<title>Задание 1, 2</title>
+<title>Отчет по лабораторной работе №1</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,23 +438,442 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
+<h1>Отчет по лабораторной работе №1</h1>
 </div>
 <div id="content">
-<div class="sect2">
-<h3 id="trueзадание-1-2"><a class="anchor" href="#trueзадание-1-2"></a>Задание 1, 2</h3>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>диодик LED4 с примера не работал т.к. в файле регистров значения прописаны в формате Value1/Value0, а не Enable, Disable, Output.</p>
+<div class="sect1">
+<h2 id="trueзадание-1"><a class="anchor" href="#trueзадание-1"></a>Задание 1</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Создать проект C++ c main.cpp</p>
+</li>
+</ul>
 </div>
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Для создания проекта мы используем интегрируемую среду разработки IAR Embedded Workbench</p>
+</div>
+<div class="paragraph">
+<p>Project&gt;Create New Project&#8230;&#8203;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_4.png" alt="screenshot 4">
+</div>
+<div class="title">Figure 1. создание нового проекта</div>
+</div>
+<div class="paragraph">
+<p>Выбираем язык C++ и глобальную функцию main</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_5.png" alt="screenshot 5">
+</div>
+<div class="title">Figure 2. настройки новго проекта</div>
+</div>
+<div class="paragraph">
+<p>Сохраним проект под каким-либо именем
+В свойствах проекта выбираем модель микроконтроллера ST &#8658; STM32F4&#8658; STM32F411&#8658; ST STM32F411RE. Для этого правой кнопкой мыши щелкнуть по проекту, выбирать Options
+и далее в категории General Option выбрать закладку Target.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/Figure11.png" alt="Figure11">
+</div>
+<div class="title">Figure 3. выбор микроконтроллера</div>
+</div>
+<div class="paragraph">
+<p>Наш проект выглядит так:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/Figure12.png" alt="Figure12">
+</div>
+<div class="title">Figure 4. стартовый вид проекта</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Подключить к проекту файл cstartup.cpp</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Для подкоючения файла cstartup.cpp, первым делом потребовалось его скачать. Для этого клонируем папку проекта преподавателя, набрав в командной строке:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>git clone https://github.com/lamer0k/CortexLib.git</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_6.png" alt="screenshot 6">
+</div>
+<div class="title">Figure 5. клонирование папки через командную строку</div>
+</div>
+<div class="paragraph">
+<p>Путь к папке в данном случае C:\Users\User</p>
+</div>
+<div class="paragraph">
+<p>В папке находим файл cstartup.cpp.Добавим его к поректу:</p>
+</div>
+<div class="paragraph">
+<p>Для этого нужно нажать правую кнопку мыши на проекте и выбрав пункт Add&#8658;Add Files…, а затем выбрать файл startup_stm32F411.cpp.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/Figure15.png" alt="#Добавление новых файлов">
+</div>
+<div class="title">Figure 6. добавление нового файла</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Создать папки AbstractHardware/Registers/FiledValues, Common, Application, FreeRtos</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Данные папки требуется создать в папке, кеуда был сохранен проект. Так же их можно скопировать с клонированной папки преподавателя.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_7.png" alt="screenshot 7">
+</div>
+<div class="title">Figure 7. структура после добавления папок</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Создать структуру проекта в соотвествии со структурой папок</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Теперь необходимо создать точно такую же структуру в проекте IAR Workbench, как и структура папок.
+Для этого необходимо нажать правой мышкой на проект, и выбрать меню Add&#8658;Ggroup и создать группы
+Abstract_Hardware, Application, Common, FreeRtos.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/Figure19.png" alt="Figure19">
+</div>
+<div class="title">Figure 8. Изменение структуры проекта</div>
+</div>
+<div class="paragraph">
+<p>Поочередно добавляем все папки сохраняя их иерархическую структуру.</p>
+</div>
+<div class="paragraph">
+<p>В конечном итоге у вас должна появиться вот такая структура:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/Figure20.png" alt="400" width="400">
+</div>
+<div class="title">Figure 9. Финальная структура проекта</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Настроить STACK, HEAP</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Для включения  анализа глубины стека достаточно поставить галочку в меню Option&#8658;Linker&#8658;Advanced&#8658;Enable stack usage analysis</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/Figure24.png" alt="400" width="400">
+</div>
+<div class="title">Figure 10. Опция анализа глубины стека</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Скопировать содержимое папки Registers и Common с проекта преподавателя в свою папку</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Поочередно добавляем все файлы (см. <a href="#Добавление новых файлов">[Добавление новых файлов]</a>) сохраняя их иерархическую структуру.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Написать программу в main.cpp</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Скопировали код программы с файла преподавателя.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">#include "gpiocregisters.hpp" //for GPIOC
+#include "rccregisters.hpp"   //for RCC
+
+int main()
+{
+  RCC::AHB1ENR::GPIOCEN::Enable::Set() ;
+  GPIOC::MODER::MODER5::Output::Set() ;
+  GPIOC::ODR::ODR5::Enable::Set() ;
+  GPIOC::ODR::ODR5::Disable::Set() ;
+  return 0 ;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Во время компиляции возникли ошибки.
+Это было связанно с тем, что в файлах <strong>gpiocfieldvalues.hpp</strong> и <strong>rccfieldvalues.hpp</strong> значения регистра  <strong>ODR5</strong> были прописаны как Value1, Value0, а не Enable, Outputy.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_8.png" alt="screenshot 8">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_9.png" alt="screenshot 9">
+</div>
+</div>
+<div class="paragraph">
+<p>Для устранения ошибки исправим значения на нужные:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_11.png" alt="screenshot 11">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_10.png" alt="screenshot 10">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_12.png" alt="screenshot 12">
+</div>
+</div>
+<div class="paragraph">
+<p>Сохраним изменения. Компиляция прошла успешно.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>UPD:  переписала код с последовательно мигающими лампочками на понятные значени.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">#include "gpioaregisters.hpp"
+#include "gpiocregisters.hpp" //
+#include "rccregisters.hpp"
+
+int main()
+{
+  RCC::AHB1ENR::GPIOAEN::Enable::Set() ;
+  GPIOA::MODER::MODER5::Output::Set() ;
+
+  RCC::AHB1ENR::GPIOCEN::Enable::Set() ;
+  GPIOC::MODER::MODER9::Output::Set() ;
+  GPIOC::MODER::MODER8::Output::Set() ;
+  GPIOC::MODER::MODER5::Output::Set() ;
+
+
+  GPIOA::ODR::ODR5::Enable::Set() ;
+  GPIOC::ODR::ODR9::Enable::Set() ;
+  GPIOC::ODR::ODR8::Enable::Set() ;
+  GPIOC::ODR::ODR5::Enable::Set() ;
+
+  GPIOA::ODR::ODR5::Disable::Set() ;
+  GPIOC::ODR::ODR9::Disable::Set() ;
+  GPIOC::ODR::ODR8::Disable::Set() ;
+  GPIOC::ODR::ODR5::Disable::Set() ;
+  return 0;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Компиляция прошла успешно. Диодики мигают.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="trueзадание-2"><a class="anchor" href="#trueзадание-2"></a>Задание 2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Следующим шагом является прошивка программы в микроконтроллер.</p>
+</div>
+<div class="paragraph">
+<p>Для начала производили отладку в симуляторе для проверки работоспособности программы.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Откомпилировать и отлинковать программу</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Для компиляции без загрузки в симулятор можно воспользоваться командой make</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_15.png" alt="screenshot 15">
+</div>
+</div>
+<div class="paragraph">
+<p>Ошибок не возникло</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Загрузить программу в симуляторе</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Для запуска в симуляторе используем:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_16.png" alt="screenshot 16">
+</div>
+</div>
+<div class="paragraph">
+<p>или горячие клавиши <strong>"Ctrl+D"</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Сделать пошаговую отладку</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Пошаговая отладка выполняется кнопками:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_17.png" alt="screenshot 17">
+</div>
+</div>
+<div class="paragraph">
+<p>или <strong>F10</strong>, <strong>F11</strong>, <strong>F12</strong> соответственно.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Настроить Debugger на отладку через StLink</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Для настройки идем в Project&#8658;Options&#8230;&#8203;&#8658;ST-LINK и выбираем параметры как показано на рисунке ниже</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_18.png" alt="screenshot 18">
+</div>
+<div class="title">Figure 11. параметры ST-LINK</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Подключить плату к компьютеру</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Подключаем плату к компьютеру через USB порт.</p>
+</div>
+<div class="paragraph">
+<p><span class="red">При скачивании IAR должны быть установлены все необходимые драйвера, в противном случае прогрмма не увидит плату</span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Загрузить программу в плату</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Загружаем программу в плату кнопками <strong>Ctrl+D</strong>.
+Возможно столкнуться с ошибкой:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_13.png" alt="screenshot 13">
+</div>
+</div>
+<div class="paragraph">
+<p>Решим ее, задав путь к своему файлу <strong>startup.cpp</strong>:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_14.png" alt="screenshot 14">
+</div>
+</div>
+<div class="paragraph">
+<p>Теперь выполняем отладку не через симулятор, а в плате.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Выполнить пошаговую отладку</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Пошаговую отладку выполняем клавишей <strong>F10</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Описать полученный результат</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Код программы с построчным описанием:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="cpp" class="language-cpp hljs">#include "gpioaregisters.hpp" //for Gpioa
+#include "gpiocregisters.hpp" //for Gpioс
+#include "rccregisters.hpp" //for RCC
+
+int main() //глобальная функция main
+//тело функци
+{
+  RCC::AHB1ENR::GPIOAEN::Enable::Set() ; //разрешение тактирования порта А
+  GPIOA::MODER::MODER5::Output::Set() ;//PA_5 - выход
+
+  RCC::AHB1ENR::GPIOCEN::Enable::Set() ; //разрешение тактирования порта С
+  GPIOC::MODER::MODER9::Output::Set() ; //PС_9 - выход
+  GPIOC::MODER::MODER8::Output::Set() ; //PС_8 - выход
+  GPIOC::MODER::MODER5::Output::Set() ; //PС_5 - выход
+
+
+  GPIOA::ODR::ODR5::Enable::Set() ; //включение диода PA_5
+  GPIOC::ODR::ODR9::Enable::Set() ; //включение диода PС_9
+  GPIOC::ODR::ODR8::Enable::Set() ; //включение диода PС_8
+  GPIOC::ODR::ODR5::Enable::Set() ; //включение диода PС_5
+
+  GPIOA::ODR::ODR5::Disable::Set() ; //выключение диода PA_5
+  GPIOC::ODR::ODR9::Disable::Set() ; //выключение диода PС_9
+  GPIOC::ODR::ODR8::Disable::Set() ; //выключение диода PС_8
+  GPIOC::ODR::ODR5::Disable::Set() ; //выключение диода PС_5
+  return 0; //заканчивает выполнение функции и возвращает в 0
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Результат работы:</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -462,15 +881,38 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="trueзадание-3"><a class="anchor" href="#trueзадание-3"></a>Задание 3</h3>
+</div>
+<div class="sect1">
+<h2 id="trueзадание-3"><a class="anchor" href="#trueзадание-3"></a>Задание 3</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Рекомендуемый размер стека: 16</p>
+<p>Следующим заданием являлось работа с организацией памяти, настройкой стека и кучи.
+При неверной настройке данных параметров программа может не выполняться.
+Так же грамотная настройка позволит нам сократить вес итоговой программы.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Запустить анализатор стека. Узнать рекомендуемый размер стека.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>При настройке мы включили анализ стека.(см. <a href="#Анализ стека">[Анализ стека]</a>)
+Рекомендуемый размер стека мы можем посмотреть в .map файле.
+Рекомендуемый размер стека: 16</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="R1IM/screenshot_1.png" alt="screenshot 1">
 </div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Изменить в проекте размер стека на рекомендуемый</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Изменим в проекте размер стека на рекомендуемый</p>
@@ -480,8 +922,29 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="R1IM/screenshot_2.png" alt="screenshot 2">
 </div>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Описать что написано в map файле</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>В .map файле написаны размеры составляющих проекта</p>
+<p>В .map файле написаны размеры составляющих проекта
+Мы можем увидеть размер стека</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_19.png" alt="screenshot 19">
+</div>
+</div>
+<div class="paragraph">
+<p>Размер отдельных элементов:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="R1IM/screenshot_20.png" alt="screenshot 20">
+</div>
 </div>
 <div class="paragraph">
 <p>Размер нашего файла:</p>
@@ -491,14 +954,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <img src="R1IM/screenshot_3.png" alt="screenshot 3">
 </div>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Поставить размер кучи HEAP в 0. Объяснить почему так можно сделать. И почему STACK нельзя</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>Размер кучи HEAP можно поставить в 0, т.к. не используется динамическая память. Размер STACK нельзя поставить в 0, т.к. при использовании функций будет невозможна запись адреса возврата.</p>
+<p>Размер кучи HEAP можно поставить в 0, т.к. не используется динамическая память. Размер STACK нельзя поставить в 0, т.к. при использовании функций будет невозможна запись адреса возврата.
+Однако, в нашем случае, путем эксперимента было установлено, что даже при выставлении 0 в стеке программа запускается и диоды мигают.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Добавить проект в Git и сделать синхронизацию с GitHub <span class="green"><span class="icon"><i class="fa fa-check"></i></span></span></p>
+</li>
+<li>
+<p>Сделать отчет по каждому пункту каждого задания в файле .adoc. Выложить файл в GitHub <span class="green"><span class="icon"><i class="fa fa-check"></i></span></span></p>
+</li>
+<li>
+<p>Прислать ссылку на GitHub преподавателю для проверки <span class="green"><span class="icon"><i class="fa fa-check"></i></span></span></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-10-05 01:33:27 +0500
+Last updated 2019-10-07 02:26:27 +0500
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
