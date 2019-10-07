@@ -10,12 +10,12 @@
 Project>Create New Project...
 
 .создание нового проекта
-image::screenshot4.png[]
+image::Screenshot4.png[]
 
 Выбираем язык C++ и глобальную функцию main
 
 .настройки новго проекта
-image::screenshot5.png[]
+image::Screenshot5.png[]
 
 Сохраним проект под каким-либо именем
 В свойствах проекта выбираем модель микроконтроллера ST => STM32F4=> STM32F411=> ST STM32F411RE. Для этого правой кнопкой мыши щелкнуть по проекту, выбирать Options
@@ -38,7 +38,7 @@ git clone https://github.com/lamer0k/CortexLib.git
 ----
 
 .клонирование папки через командную строку
-image::screenshot6.png[]
+image::Screenshot6.png[]
 
 Путь к папке в данном случае C:\Users\User
 
@@ -56,7 +56,7 @@ image::Figure15.png[]
 Данные папки требуется создать в папке, кеуда был сохранен проект. Так же их можно скопировать с клонированной папки преподавателя.
 
 .структура после добавления папок
-image::screenshot7.png[]
+image::Screenshot7.png[]
 
 * Создать структуру проекта в соответствии со структурой папок
 
@@ -112,14 +112,14 @@ int main()
 Во время компиляции возникли ошибки.
 Это было связанно с тем, что в файлах *gpiocfieldvalues.hpp* и *rccfieldvalues.hpp* значения регистра  *ODR5* были прописаны как Value1, Value0, а не Enable, Outputy.
 
-image::screenshot8.png[]
-image::screenshot9.png[]
+image::Screenshot8.png[]
+image::Screenshot9.png[]
 
 Для устранения ошибки исправим значения на нужные:
 
-image::screenshot11.png[]
-image::screenshot10.png[]
-image::screenshot12.png[]
+image::Screenshot11.png[]
+image::Screenshot10.png[]
+image::Screenshot12.png[]
 
 Сохраним изменения. Компиляция прошла успешно.
 
@@ -168,21 +168,21 @@ int main()
 
 Для компиляции без загрузки в симулятор можно воспользоваться командой make
 
-image::screenshot15.png[]
+image::Screenshot15.png[]
 Ошибок не возникло
 
 * Загрузить программу в симуляторе
 
 Для запуска в симуляторе используем:
 
-image::screenshot16.png[]
+image::Screenshot16.png[]
 или горячие клавиши *"Ctrl+D"*
 
 * Сделать пошаговую отладку
 
 Пошаговая отладка выполняется кнопками:
 
-image::screenshot17.png[]
+image::Screenshot17.png[]
 или *F10*, *F11*, *F12* соответственно.
 
 * Настроить Debugger на отладку через StLink
@@ -190,7 +190,7 @@ image::screenshot17.png[]
 Для настройки идем в Project=>Options...=>ST-LINK и выбираем параметры как показано на рисунке ниже
 
 .параметры ST-LINK
-image::screenshot18.png[]
+image::Screenshot18.png[]
 
 * Подключить плату к компьютеру
 
@@ -203,11 +203,11 @@ image::screenshot18.png[]
 Загружаем программу в плату кнопками *Ctrl+D*.
 Возможно столкнуться с ошибкой:
 
-image::screenshot13.png[]
+image::Screenshot13.png[]
 
 Решим ее, задав путь к своему файлу *startup.cpp*:
 
-image::screenshot14.png[]
+image::Screenshot14.png[]
 
 Теперь выполняем отладку не через симулятор, а в плате.
 
@@ -266,7 +266,7 @@ video::364375916[vimeo]
 Рекомендуемый размер стека мы можем посмотреть в .map файле.
 Рекомендуемый размер стека: 16
 
-image::Figure1.png[]
+image::Screenshot1.png[]
 
 * Изменить в проекте размер стека на рекомендуемый
 
@@ -279,15 +279,15 @@ image::Screenshot2.png[]
 В .map файле написаны размеры составляющих проекта
 Мы можем увидеть размер стека
 
-image::screenshot19.png[]
+image::Screenshot19.png[]
 
 Размер отдельных элементов:
 
-image::screenshot_20.png[]
+image::Screenshot_20.png[]
 
 Размер нашего файла:
 
-image::screenshot3.png[]
+image::Screenshot3.png[]
 
 * Поставить размер кучи HEAP в 0. Объяснить почему так можно сделать. И почему STACK нельзя
 
