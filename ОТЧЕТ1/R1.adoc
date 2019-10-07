@@ -283,7 +283,7 @@ image::Screenshot19.png[]
 
 Размер отдельных элементов:
 
-image::Screenshot_20.png[]
+image::Screenshot20.png[]
 
 Размер нашего файла:
 
