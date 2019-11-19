@@ -6445,7 +6445,7 @@
     "scope": null
   },
   {
-    "ID": "c:rccregisters.hpp@371@macro@RCCREGISTERS_HPP",
+    "ID": "c:rccregisters.hpp@361@macro@RCCREGISTERS_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RCCREGISTERS_HPP",
@@ -10035,7 +10035,7 @@
     "scope": null
   },
   {
-    "ID": "c:gpioaregisters.hpp@372@macro@GPIOAREGISTERS_HPP",
+    "ID": "c:gpioaregisters.hpp@362@macro@GPIOAREGISTERS_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIOAREGISTERS_HPP",
@@ -15173,7 +15173,7 @@
     "scope": null
   },
   {
-    "ID": "c:rccfieldvalues.hpp@386@macro@RCCENUMS_HPP",
+    "ID": "c:rccfieldvalues.hpp@376@macro@RCCENUMS_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RCCENUMS_HPP",
@@ -21843,7 +21843,7 @@
     "scope": null
   },
   {
-    "ID": "c:accessmode.hpp@90@macro@REGISTERS_ACCESSMODE_HPP",
+    "ID": "c:accessmode.hpp@85@macro@REGISTERS_ACCESSMODE_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_ACCESSMODE_HPP",
@@ -22144,7 +22144,7 @@
     "scope": null
   },
   {
-    "ID": "c:gpiocregisters.hpp@372@macro@GPIOCREGISTERS_HPP",
+    "ID": "c:gpiocregisters.hpp@362@macro@GPIOCREGISTERS_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIOCREGISTERS_HPP",
@@ -24878,7 +24878,7 @@
     "scope": null
   },
   {
-    "ID": "c:gpioafieldvalues.hpp@392@macro@GPIOAENUMS_HPP",
+    "ID": "c:gpioafieldvalues.hpp@382@macro@GPIOAENUMS_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIOAENUMS_HPP",
@@ -25896,7 +25896,7 @@
     "scope": null
   },
   {
-    "ID": "c:fieldvalue.hpp@90@macro@REGISTERS_FIELDVALUE_HPP",
+    "ID": "c:fieldvalue.hpp@85@macro@REGISTERS_FIELDVALUE_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_FIELDVALUE_HPP",
@@ -30301,7 +30301,7 @@
     "scope": null
   },
   {
-    "ID": "c:gpiocfieldvalues.hpp@392@macro@GPIOCENUMS_HPP",
+    "ID": "c:gpiocfieldvalues.hpp@382@macro@GPIOCENUMS_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIOCENUMS_HPP",
@@ -31319,7 +31319,7 @@
     "scope": null
   },
   {
-    "ID": "c:registerfield.hpp@93@macro@REGISTERS_REGISTERFIELD_HPP",
+    "ID": "c:registerfield.hpp@88@macro@REGISTERS_REGISTERFIELD_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_REGISTERFIELD_HPP",
@@ -31447,7 +31447,7 @@
     "scope": null
   },
   {
-    "ID": "c:registerbase.hpp@92@macro@REGISTERS_REGISTERBASE_HPP",
+    "ID": "c:registerbase.hpp@87@macro@REGISTERS_REGISTERBASE_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_REGISTERBASE_HPP",
@@ -31547,7 +31547,7 @@
     "scope": null
   },
   {
-    "ID": "c:fieldvaluebase.hpp@94@macro@REGISTERS_FIELDVALUEBASE_HPP",
+    "ID": "c:fieldvaluebase.hpp@89@macro@REGISTERS_FIELDVALUEBASE_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_FIELDVALUEBASE_HPP",
@@ -31600,7 +31600,7 @@
         "scope": "FieldValueBase"
       },
       {
-        "ID": "c:fieldvaluebase.hpp@998@ST>3#T#T#N^type-parameter-0-0::Register:::Type@FieldValueBase@FT@>2#T#TSet#v#S@newRegValue",
+        "ID": "c:fieldvaluebase.hpp@975@ST>3#T#T#N^type-parameter-0-0::Register:::Type@FieldValueBase@FT@>2#T#TSet#v#S@newRegValue",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "newRegValue",
@@ -33123,7 +33123,7 @@
     "scope": null
   },
   {
-    "ID": "c:register.hpp@86@macro@REGISTERS_REGISTER_HPP",
+    "ID": "c:register.hpp@82@macro@REGISTERS_REGISTER_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_REGISTER_HPP",
@@ -33204,7 +33204,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@2776@ST>5#Ni#Ni#T#T#pT@Register@FT@>2#T#TGetIndividualMask# #S@result",
+        "ID": "c:register.hpp@2729@ST>5#Ni#Ni#T#T#pT@Register@FT@>2#T#TGetIndividualMask# #S@result",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "result",
@@ -33232,7 +33232,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@3076@ST>5#Ni#Ni#T#T#pT@Register@F@GetMask#S@values",
+        "ID": "c:register.hpp@3022@ST>5#Ni#Ni#T#T#pT@Register@F@GetMask#S@values",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "values",
@@ -33246,7 +33246,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@3252@ST>5#Ni#Ni#T#T#pT@Register@F@GetMask#S@result",
+        "ID": "c:register.hpp@3197@ST>5#Ni#Ni#T#T#pT@Register@F@GetMask#S@result",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "result",
@@ -33260,7 +33260,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@3281@ST>5#Ni#Ni#T#T#pT@Register@F@GetMask#S@v",
+        "ID": "c:register.hpp@3225@ST>5#Ni#Ni#T#T#pT@Register@F@GetMask#S@v",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "v",
@@ -33288,7 +33288,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@4221@ST>5#Ni#Ni#T#T#pT@Register@FT@>2#T#TGetIndividualValue# #S@result",
+        "ID": "c:register.hpp@4151@ST>5#Ni#Ni#T#T#pT@Register@FT@>2#T#TGetIndividualValue# #S@result",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "result",
@@ -33316,7 +33316,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@4547@ST>5#Ni#Ni#T#T#pT@Register@F@GetValue#S@values",
+        "ID": "c:register.hpp@4470@ST>5#Ni#Ni#T#T#pT@Register@F@GetValue#S@values",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "values",
@@ -33330,7 +33330,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@4605@ST>5#Ni#Ni#T#T#pT@Register@F@GetValue#S@result",
+        "ID": "c:register.hpp@4527@ST>5#Ni#Ni#T#T#pT@Register@F@GetValue#S@result",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "result",
@@ -33344,7 +33344,7 @@
         "scope": "Register"
       },
       {
-        "ID": "c:register.hpp@4634@ST>5#Ni#Ni#T#T#pT@Register@F@GetValue#S@v",
+        "ID": "c:register.hpp@4555@ST>5#Ni#Ni#T#T#pT@Register@F@GetValue#S@v",
         "What": "VarDecl",
         "defdec": "Def",
         "display": "v",
@@ -34066,7 +34066,7 @@
     "scope": null
   },
   {
-    "ID": "c:registertype.hpp@92@macro@REGISTERS_REGISTERTYPE_HPP",
+    "ID": "c:registertype.hpp@87@macro@REGISTERS_REGISTERTYPE_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_REGISTERTYPE_HPP",
@@ -34215,7 +34215,7 @@
     "scope": null
   },
   {
-    "ID": "c:susudefs.hpp@88@macro@REGISTERS_SUSUDEFS_HPP",
+    "ID": "c:susudefs.hpp@83@macro@REGISTERS_SUSUDEFS_HPP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTERS_SUSUDEFS_HPP",
@@ -34229,7 +34229,7 @@
     "scope": null
   },
   {
-    "ID": "c:susudefs.hpp@173@macro@__forceinline",
+    "ID": "c:susudefs.hpp@165@macro@__forceinline",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__forceinline",
