@@ -1,8 +1,10 @@
 main.pbi: \
-  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp \
-  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\rccregisters.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\tim2fieldvalues.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\tim2registers.hpp \
   D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp \
   D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\gpiocregisters.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\gpioafieldvalues.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\gpioaregisters.hpp \
   D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\register.hpp \
   C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
   C:\Programs\IAR\ Arm\arm\inc\c\stdint.h \
@@ -29,6 +31,6 @@ main.pbi: \
   C:\Programs\IAR\ Arm\arm\inc\c\stddef.h \
   C:\Programs\IAR\ Arm\arm\inc\cpp\cstddef \
   D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\fieldvalue.hpp \
-  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\gpioafieldvalues.hpp \
-  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\gpioaregisters.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp \
+  D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\STM32F411\rccregisters.hpp \
   D:\kraizette\STD\VII\POIP\PROJECTS\LR2\main.cpp
