@@ -1,0 +1,120 @@
+:imagesdir: R4IM
+
+
+= Отчет №4
+
+Код с лекции (main):
+
+[source, C]
+
+----
+
+#include "gpioaregisters.hpp" //подключение регистров GPIOA
+#include "gpiocregisters.hpp" //подключение регистров GPIOC
+#include "rccregisters.hpp"   //подключение регистров RCC
+#include "tim5registers.hpp"  //подключение регистров TIM5
+#include "nvicregisters.hpp"  //подключение регистров NVIC
+
+using namespace std ; //подключение пространства имен std
+
+extern "C"
+{
+int __low_level_init(void)
+ {
+  RCC::CR::HSION::On::Set();//подключение внутренней частоты
+  while (!RCC::CR::HSIRDY::Ready::IsSet()) //ожидание стабилизация источника
+  {};
+  RCC::CFGR::SW::Hsi::Set(); //назначаем источник на системную частоту
+  while (!RCC::CFGR::SWS::Hsi::IsSet()) //ожидание переключения источника на системную частоту
+  {};
+  RCC::APB1ENR::TIM5EN::Enable::Set(); //включение 5 таймера
+    
+  TIM5::CR1::URS::Value1::Set(); //только переполнение генерирует обновление прерывания
+    
+    
+    RCC::AHB1ENR::GPIOCEN::Enable::Set(); //включение тактирования портов С
+    RCC::AHB1ENR::GPIOAEN::Enable::Set(); //включение тактирования портов А
+    GPIOA::MODER::MODER5::Output::Set() ; //порт  А 5 ывход
+    GPIOC::MODER::MODER5::Output::Set() ; //порт  С 5 ывход
+    GPIOC::MODER::MODER8::Output::Set() ; //порт  С 8 ывход
+    GPIOC::MODER::MODER9::Output::Set() ; //порт  С 9 ывход
+    
+    TIM5::PSC::Write(15999); //деление на 16000
+    NVIC::ISER1::Write(1<<18); //глобальные прерывания
+    TIM5::DIER::UIE::Enable::Set(); //разрешение прерываний
+    TIM5::ARR::Write(2000) ; //скорость мигания
+    TIM5::SR::UIF::NoUpdate::Set(); //не обновлять флаг прерываний
+    TIM5::CNT::Write(0); //записывает "0" в счетчик
+    TIM5::CR1::CEN::Enable::Set() ;  //включение счетчика 
+    return 1;
+  }
+}
+
+
+int main()
+{
+  for(;;)
+  {
+  } 
+  return 0 ;
+}
+
+----
+
+В таблице векторов прерываний в startup записываем адреса обработчиков для каждого вектора до адреса вектора tim5 (57) по мануалу.
+
+image::Figure1.png[]
+
+[source, C]
+
+----
+
+
+  InterruptHandler::Timer2Handler,         //TIM2  	
+  InterruptHandler::DummyHandler,         //TIM3
+  InterruptHandler::DummyHandler,        ////TIM4
+  InterruptHandler::DummyHandler,        //I2C1_EV
+  InterruptHandler::DummyHandler, //I2C1_ER
+  InterruptHandler::DummyHandler, //I2C2_EV
+  InterruptHandler::DummyHandler, // I2C2_ER
+  InterruptHandler::DummyHandler, //SPI1
+  InterruptHandler::DummyHandler, //SPI2
+  InterruptHandler::DummyHandler, //USART1
+  InterruptHandler::DummyHandler, //USART2
+  0, 
+  InterruptHandler::DummyHandler, //EXTI15_10
+  InterruptHandler::DummyHandler, //EXTI17 / RTC_Alarm
+  InterruptHandler::DummyHandler, //EXTI18 /OTG_FS_WKUP
+  0,
+  0,
+  0,
+  0,
+  InterruptHandler::DummyHandler,  //DMA1_Stream7
+  0,
+  InterruptHandler::DummyHandler, //SDIO
+  InterruptHandler::Timer5Handler, //TIM5
+  InterruptHandler::DummyHandler, //SPI3
+
+};
+
+----
+
+Пропишем обработку прерывания для TIM5 в interrupthandler
+
+[source, C]
+
+----
+
+static void Timer5Handler()
+{
+if(TIM5::SR::UIF::UpdatePending::IsSet()) //ожидание обновления прерывания
+    {
+    TIM5::SR::UIF::NoUpdate::Set(); //не обновлять флаг прерываний
+    GPIOC::ODR::Toggle((1 << 8)|(1 << 5)|(1 << 9)) ; //изменить значение 8,5 и 9 бита в GPIOC
+    GPIOA::ODR::Toggle(1 << 5) ; //изменить значение 5 бита в GPIOA
+    }
+}
+
+----
+
+Все работает. Красота.
