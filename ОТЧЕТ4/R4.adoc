@@ -34,18 +34,18 @@ int __low_level_init(void)
     
     RCC::AHB1ENR::GPIOCEN::Enable::Set(); //включение тактирования портов С
     RCC::AHB1ENR::GPIOAEN::Enable::Set(); //включение тактирования портов А
-    GPIOA::MODER::MODER5::Output::Set() ; //порт  А 5 ывход
-    GPIOC::MODER::MODER5::Output::Set() ; //порт  С 5 ывход
-    GPIOC::MODER::MODER8::Output::Set() ; //порт  С 8 ывход
-    GPIOC::MODER::MODER9::Output::Set() ; //порт  С 9 ывход
+    GPIOA::MODER::MODER5::Output::Set() ; //порт  А 5 выход
+    GPIOC::MODER::MODER5::Output::Set() ; //порт  С 5 выход
+    GPIOC::MODER::MODER8::Output::Set() ; //порт  С 8 выход
+    GPIOC::MODER::MODER9::Output::Set() ; //порт  С 9 выход
     
     TIM5::PSC::Write(15999); //деление на 16000
     NVIC::ISER1::Write(1<<18); //глобальные прерывания
-    TIM5::DIER::UIE::Enable::Set(); //разрешение прерываний
     TIM5::ARR::Write(2000) ; //скорость мигания
-    TIM5::SR::UIF::NoUpdate::Set(); //не обновлять флаг прерываний
+    TIM5::SR::UIF::NoUpdate::Set(); //сброс флага запроса на прерывание. 
     TIM5::CNT::Write(0); //записывает "0" в счетчик
     TIM5::CR1::CEN::Enable::Set() ;  //включение счетчика 
+    TIM5::DIER::UIE::Enable::Set(); //разрешение прерываний
     return 1;
   }
 }
