@@ -150,24 +150,114 @@ image::Figure2.png[]
 
 image::Figure3.png[] 
 
+С простой формулой:
 
 [source, C]
 
 ----
-constexpr size_t T30Addr = 0x1FFF7A2C;
-constexpr size_t T110Addr =  0x1FFF7A2E;
+int main()
+{
+  uint16_t data = 0U ;
+  float temperature = 0.0F ;
+  
+  for(;;)    
+  {
+    //**************ADC*****************
+    // Enable ADC1
+    
+    //Start conversion
+    //Запустить АЦП на преобразование установкой бита SWSTART в регистре ADC::CR2 для регулярных каналов
+    ADC1::CR2::SWSTART::On::Set();
+    
+    volatile uint16_t *tsCal1Pointer = reinterpret_cast<volatile uint16_t*>(tsCal1Addr) ;
+    volatile uint16_t *tsCal2Pointer = reinterpret_cast<volatile uint16_t*>(tsCal2Addr) ;
+
+    uint16_t Cal1 = *tsCal1Pointer;
+    uint16_t Cal2 = *tsCal2Pointer;
+
+    float tsCal1 = Cal1;
+    float tsCal2 = Cal2;
+
+    
+    // wait until Conversion is not complete 
+    //Дождаться готовности бита EOC в регистре ADC::SR
+    while(!ADC1::SR::EOC::ConversionComplete::IsSet())
+    {};
+    data =  ADC1::DR::Get(); //Get data from ADC;
+    //float Vdda = 3.3F;
+    float ADC_Code = data;
+    //float DEGREE_30 = 30.0F;
+    temperature = (100-30) * (ADC_Code - tsCal1) / (tsCal2- tsCal1) + 30 ;
+
+           
+  std::cout << "Count: " << ADC_Code << " Temperature: " << temperature <<  std::endl ;
+
+}
+return 0;  
+}
+
+----
+
+image::Figure7.png[]
+
+Калибровочные значения опорного напряжения:
+
+image::Figure6.png[]
+
+
+[source, C]
+
+----
+constexpr size_t tsCal1Addr = 0x1FFF7A2C;
+constexpr size_t tsCal2Addr =  0x1FFF7A2E;
+constexpr size_t VddaCalAddr =  0x1FFF7A2A;
 
 int main()
 {
+  uint16_t data = 0U ;
+  float temperature = 0.0F ;
+  
+  for(;;)    
+  {
+    //**************ADC*****************
+    // Enable ADC1
     
-  volatile uint32_t *T30Pointer = reinterpret_cast<volatile uint32_t*>(T30Addr) ;
-  volatile uint32_t *T110Pointer = reinterpret_cast<volatile uint32_t*>(T110Addr) ;
+    //Start conversion
+    //Запустить АЦП на преобразование установкой бита SWSTART в регистре ADC::CR2 для регулярных каналов
+    ADC1::CR2::SWSTART::On::Set();
+    
+    volatile uint16_t *tsCal1Pointer = reinterpret_cast<volatile uint16_t*>(tsCal1Addr) ;
+    volatile uint16_t *tsCal2Pointer = reinterpret_cast<volatile uint16_t*>(tsCal2Addr) ;
+    volatile uint16_t *VddaCalPointer = reinterpret_cast<volatile uint16_t*>(VddaCalAddr) ;
+    uint16_t Cal1 = *tsCal1Pointer;
+    uint16_t Cal2 = *tsCal2Pointer;
+    uint16_t ddaCal = *VddaCalPointer;
+    float tsCal1 = Cal1;
+    float tsCal2 = Cal2;
+    float VddaCal = ddaCal*0.001;
+    
+    // wait until Conversion is not complete 
+    //Дождаться готовности бита EOC в регистре ADC::SR
+    while(!ADC1::SR::EOC::ConversionComplete::IsSet())
+    {};
+    data =  ADC1::DR::Get(); //Get data from ADC;
+    float Vdda = 3.3F;
+    float ADC_Code = data;
+    float DEGREE_30 = 30.0F;
+    temperature = (110-30) * ((ADC_Code * VddaCal)/Vdda -  tsCal1) / (tsCal2 - tsCal1) + DEGREE_30; ; //Convert ADC counts to temperature
+           
+  std::cout << "Count: " << ADC_Code << " Temperature: " << temperature <<  std::endl ;
 
-  uint32_t T30 = *T30Pointer;
-  uint32_t T110 = *T110Pointer;
+}
+return 0;  
+}
+
 ----
 
-image::Figure4.png[]
+image::Figure9.png[]
 
-Вопрос: как именно нужно использовать данные значения длы получения температуры?
+И все испортилось :с
+
+image::Figure8.png[]
+
 
