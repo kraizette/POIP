@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.general.xcl" --backend -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.driver.xcl" 
+& "C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.general.xcl" --backend -f "D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.driver.xcl" 
+& "C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\settings\lr2.Debug.driver.xcl" 
 }

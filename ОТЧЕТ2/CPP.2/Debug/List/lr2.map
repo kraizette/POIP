@@ -1,22 +1,23 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.1.212/W32 for ARM                  30/Nov/2019  20:59:45
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  12/Feb/2020  16:01:53
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =
-#        D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Exe\lr2.out
+#        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Exe\lr2.out
 #    Map file     =
-#        D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\List\lr2.map
+#        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\List\lr2.map
 #    Command line =
-#        -f C:\Users\User\AppData\Local\Temp\EWB326.tmp
-#        (D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj\main.o
-#        D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj\startup.o
+#        -f C:\Users\User\AppData\Local\Temp\EW334D.tmp
+#        (D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj\main.o
+#        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj\startup.o
 #        --no_out_extension -o
-#        D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Exe\lr2.out
+#        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Exe\lr2.out
 #        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
 #        --map
-#        D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\List\lr2.map
-#        --config D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\lr2.icf
+#        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\List\lr2.map
+#        --config
+#        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\lr2.icf
 #        --semihosting --entry __iar_program_start --no_exceptions --vfe
 #        --enable_stack_usage --text_out locale)
 #
@@ -148,7 +149,7 @@ command line/config:
     -------------------------------------------
     Total:
 
-D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj: [1]
+D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj: [1]
     main.o                 24
     startup.o              20      188
     -------------------------------------------
@@ -216,7 +217,7 @@ exit                     0x800'011d   0x4  Code  Gb  exit.o [2]
 main                     0x800'0105  0x18  Code  Gb  main.o [1]
 
 
-[1] = D:\kraizette\STD\VII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj
+[1] = D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер2\CPP.2\Debug\Obj
 [2] = dl7M_tln.a
 [3] = dlpp7M_tl_nc.a
 [4] = m7M_tls.a

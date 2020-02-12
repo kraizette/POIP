@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Programs\IAR Arm\common\bin\cspybat" -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.general.xcl" --backend -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.driver.xcl" 
+& "C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.general.xcl" --backend -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Programs\IAR Arm\common\bin\cspybat" -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.driver.xcl" 
+& "C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.driver.xcl" 
 }
