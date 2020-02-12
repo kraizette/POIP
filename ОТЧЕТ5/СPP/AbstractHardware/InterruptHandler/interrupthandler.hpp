@@ -15,10 +15,9 @@ class InterruptHandler {
   public:
     static void DummyHandler() { for(;;) {} }
     static void USART2Handler()
-    {
-      char str[] = "Hello World! ";
-      char *ptr; 
-      ptr = &str[0];
+{
+      char str[] = "H2222ello World! ";
+      char *ptr = &str[0];
       for(;;)    
       {
          USART2::DR::Write(*ptr) ;  

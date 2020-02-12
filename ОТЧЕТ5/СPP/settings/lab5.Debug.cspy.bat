@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Programs\IAR Arm\common\bin\cspybat" -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.general.xcl" --backend -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.driver.xcl" 
+"C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.general.xcl" --backend -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Programs\IAR Arm\common\bin\cspybat" -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\User\Desktop\Lab5Empty\settings\lab5.Debug.driver.xcl" 
+"C:\Programs\IAR Arm\common\bin\cspybat" -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ5\СPP\settings\lab5.Debug.driver.xcl" 
 
 @echo off 
 :end

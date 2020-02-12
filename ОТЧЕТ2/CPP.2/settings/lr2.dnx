@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1631690872</Checksum>
+        <Checksum>2377039673</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>0</Enabled>
@@ -50,7 +50,7 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <StLinkDriver>
-        <stlinkserialNo>33441167</stlinkserialNo>
+        <stlinkserialNo>42302543</stlinkserialNo>
         <stlinkfoundProbes />
         <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
@@ -147,7 +147,8 @@
         <A0>_ "C:\Users\Студент-10\Documents\KE413\LR4\startup.cpp" "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\startup.cpp"</A0>
         <A1>_ "C:\Users\Студент-10\Documents\KE413\startup.cpp" "D:\kraizette\STD\VII\POIP\PROJECTS\LR2\startup.cpp"</A1>
         <A2>_ "D:\kraizette\STD\VII\POIP\PROJECTS\LR2\AbstractHardware\Registers\fieldvaluebase.hpp" "F:\PROJECTS\LR2\AbstractHardware\Registers\fieldvaluebase.hpp"</A2>
-        <Count>3</Count>
+        <A3>_ "D:\kraizette\STD\VII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\startup.cpp" "D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ2\CPP.2\startup.cpp"</A3>
+        <Count>4</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <DriverProfiling>
