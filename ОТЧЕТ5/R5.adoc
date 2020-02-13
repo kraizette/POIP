@@ -40,7 +40,8 @@
 #include "usart2registers.hpp" //for USART2
 
 using namespace std ;
-
+const char* str = " Hello World!";
+const char* ptr = str;
 extern "C"
 {
 int __low_level_init(void)
@@ -58,7 +59,7 @@ int __low_level_init(void)
   //таймер
   RCC::APB1ENR::TIM2EN::Enable::Set(); //включение 2 таймера 
   TIM2::PSC::Write(7999); //деление на 8000
-  TIM2::ARR::Write(38); //скорость 0,5 мс (В "Hello World! " 13 символов. 500/13=38)
+  TIM2::ARR::Write(500); //скорость 0,5 мс (В "Hello World! " 13 символов. 500/13=38)
   TIM2::CR1::CEN::Enable::Set(); //включение счетчика
   //USART2
   RCC::APB1ENR::USART2EN::Enable::Set(); //Подключение модуля USART2 к шине тактирования
@@ -72,24 +73,28 @@ int __low_level_init(void)
   GPIOA::AFRL::AFRL3::Af7::Set(); //биты для настройки альтернативных функций ввода-вывода. порт А.3
   USART2::BRR::Write(52<<4); //Регистр настройки скорости передачи. Счетчики бода перестают считать, если биты TE или RE отключены соответственно
   //USARTDIV = CLK/(BaudRate*8*(2 - OVER8))​
-  //USARTDIV = 8000/(19200*8*(2-1((OVER8=1)режим дискретизации 1/8)))= 52
+  //USARTDIV = 8000/(9600*8*(2-1((OVER8=1)режим дискретизации 1/8)))= 52
   USART2::CR2::STOP::Value2::Set();//2 стоп бита
   NVIC::ISER1::Write(1<<6); //разрешить глобальное прерывание по USART​2?
   //(страница 203?) за включение прерываний 32-63  отвечает ISER[1]. наше прерывание - 38. 38-31=6. 
-    
   USART2::CR1::UE::Enable::Set(); //Включение USART2
+ // USART2::CR1::RE::Enable::Set(); //Включение приема
   USART2::CR1::TE::Enable::Set(); //Включение передачи
-  USART2::CR1::RE::Enable::Set(); //Включение приема
-  USART2::CR1::TXEIE::InterruptWhenTXE::Set();  //разрешить прерывание по передаче​
   return 1;
   }
 }
 
 int main()
 {
- 
-    for(;;)
+  for(;;)
   {
+    USART2::DR::Write(*ptr++) ; 
+    USART2::CR1::TE::Enable::Set();
+    USART2::CR1::TXEIE::InterruptWhenTXE::Set();
+    while(TIM2::SR::UIF::NoUpdate::IsSet())
+      {
+      }
+    TIM2::SR::UIF::NoUpdate::Set();
   }
   return 0 ;
 }
@@ -201,6 +206,7 @@ void __iar_program_start(void) {
 
 ----
 
+
 #ifndef REGISTERS_INTERRUPTHANDLER_HPP
 #define REGISTERS_INTERRUPTHANDLER_HPP
 
@@ -213,34 +219,40 @@ void __iar_program_start(void) {
 #include "nvicregisters.hpp"   //for NVIC
 #include "usart2registers.hpp" //for USART2
 
-class InterruptHandler {
+extern const char* str;
+extern const char* ptr;
+      
+class InterruptHandler 
+{
   public:
     static void DummyHandler() { for(;;) {} }
     static void USART2Handler()
     {
-      char str[] = "Hello World! ";
-      char *ptr; 
-      ptr = &str[0];
-      for(;;)    
-      {
-         USART2::DR::Write(*ptr) ;  
-         while(!USART2::SR::TXE::DataRegisterEmpty::IsSet()) ;
-         ptr ++ ;
-         if (*ptr == 0)
-            {
-            ptr = str ;
-            }
-        while(TIM2::SR::UIF::NoUpdate::IsSet()) ; 
-              TIM2::SR::UIF::NoUpdate::Set();
-        }
+      if(USART2::SR::TXE::DataRegisterEmpty::IsSet() && USART2::CR1::TXEIE::InterruptWhenTXE::IsSet()) 
+      {   
+        if (*ptr == 0)
+        {
+           ptr = str ;
+           USART2::CR1::TXEIE::InterruptInhibited::Set();
+           USART2::CR1::TCIE::InterruptInhibited::Set();
+         }
+        else
+         {
+           USART2::DR::Write(*ptr) ;
+           ptr ++ ; 
+         }            
+       }
+     if (USART2::SR::TC::TransmitionNotComplete::IsSet() && USART2::CR1::TCIE::InterruptWhenTC::IsSet())
+     {
+       USART2::CR1::TE::Disable::Set();
+     }
     }
 };
 
 #endif //REGISTERS_INTERRUPTHANDLER_HPP//50
+
 ----
 
 Результат:
 
 image::Figure2.png[]
-
-Выводить строку не получилось, только через скорость. :с
