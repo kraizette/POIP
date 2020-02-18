@@ -131,7 +131,7 @@ int main()
     temperature2 = ADC_Code * (110-30)*VddaCal/(Vdda*(tsCal2-tsCal1)) + DEGREE_30 - (110-30)*tsCal1/(tsCal2-tsCal1) ; //Convert ADC counts to temperature
 
     //----------I/O-------------------------------------------------------------
-    cout << "\nCount: " << ADC_Code << " \nTemperature \nWithout calibration: " << temperature << " \nWith temperature sensor calibration: " << temperature1 << " \nWith temperature sensor and internal reference voltage calibration: " << temperature2 << endl ;
+    cout << "\nADC_Code: " << ADC_Code << " tsCal1: " << tsCal1 << " tsCal2: " << tsCal2 << "\nVdda: " << Vdda << " VddaCal: " << VddaCal << " \nTemperature \nWithout calibration: " << temperature << " \nWith temperature sensor calibration: " << temperature1 << " \nWith temperature sensor and internal reference voltage calibration: " << temperature2 << endl ;
   }
 return 0;  
 }
