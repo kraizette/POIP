@@ -1,4 +1,4 @@
- imagesdir: R7IM
+: imagesdir : R7IM
 
 = Отчет №7
 
