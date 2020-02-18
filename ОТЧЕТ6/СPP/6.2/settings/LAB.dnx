@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
 <settings>
     <StLinkDriver>
-        <stlinkserialNo>33441167</stlinkserialNo>
+        <stlinkserialNo>42302543</stlinkserialNo>
         <stlinkfoundProbes />
         <stlinkResetStyle>0</stlinkResetStyle>
-        <stlinkResetStrategy>1</stlinkResetStrategy>
+        <stlinkResetStrategy>0</stlinkResetStrategy>
         <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </StLinkDriver>
     <DebugChecksum>
-        <Checksum>548414532</Checksum>
+        <Checksum>1578287819</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
         <StopOnThrow>_ 0</StopOnThrow>
     </Exceptions>
     <CodeCoverage>
-        <Enabled>_ 0</Enabled>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+        <HideCovered>0</HideCovered>
     </CodeCoverage>
     <Stack>
         <FillEnabled>0</FillEnabled>
@@ -99,15 +101,15 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>3</Mode>
