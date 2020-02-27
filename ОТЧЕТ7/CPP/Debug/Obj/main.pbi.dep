@@ -1,4 +1,10 @@
-main.pbi: C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
+main.pbi: \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\FieldValues\tim2fieldvalues.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\tim2registers.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\rccregisters.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP\ADCCalibration.hpp \
+  C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
   C:\Programs\IAR\ Arm\arm\inc\c\errno.h \
   C:\Programs\IAR\ Arm\arm\inc\cpp\cerrno \
   C:\Programs\IAR\ Arm\arm\inc\cpp\system_error \
@@ -49,12 +55,9 @@ main.pbi: C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
   C:\Programs\IAR\ Arm\arm\inc\cpp\ostream \
   C:\Programs\IAR\ Arm\arm\inc\cpp\istream \
   C:\Programs\IAR\ Arm\arm\inc\cpp\iostream \
-  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp \
-  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\rccregisters.hpp \
-  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp \
-  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\gpiocregisters.hpp \
-  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\FieldValues\gpioafieldvalues.hpp \
-  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\gpioaregisters.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP\ADCTemperatureMeasurement.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP\ADCTemperature.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP\ADC.hpp \
   D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\FieldValues\adccommonfieldvalues.hpp \
   D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\adccommonregisters.hpp \
   D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\register.hpp \
@@ -85,4 +88,5 @@ main.pbi: C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
   D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\fieldvalue.hpp \
   D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\FieldValues\adc1fieldvalues.hpp \
   D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registers\STM32F411\adc1registers.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP\HardwareADC.hpp \
   D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\main.cpp

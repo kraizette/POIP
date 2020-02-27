@@ -2735,6 +2735,21 @@
             </file>
         </group>
     </group>
+    <group>
+        <name>HPP</name>
+        <file>
+            <name>$PROJ_DIR$\HPP\ADC.hpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\HPP\ADCTemperature.hpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\HPP\ADCTemperatureMeasurement.hpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\HPP\HardwareADC.hpp</name>
+        </file>
+    </group>
     <file>
         <name>$PROJ_DIR$\main.cpp</name>
     </file>
