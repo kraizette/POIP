@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.1.212/W32 for ARM                  13/Feb/2020  18:14:21
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  24/Feb/2020  16:06:12
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =
@@ -8,7 +8,7 @@
 #    Map file     =
 #        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер6\яPP\6.2\Debug\List\LAB.map
 #    Command line =
-#        -f C:\Users\User\AppData\Local\Temp\EWC1C2.tmp
+#        -f C:\Users\User\AppData\Local\Temp\EWDC11.tmp
 #        (D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер6\яPP\6.2\Debug\Obj\main.o
 #        --no_out_extension -o
 #        D:\kraizette\STD\VII-VIII\POIP\PROJECTS\нрвер6\яPP\6.2\Debug\Exe\LAB.out

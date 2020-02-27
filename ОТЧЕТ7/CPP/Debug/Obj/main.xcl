@@ -28,6 +28,10 @@ D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\Common\Observer
 -I
 D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\settings
 -I
+D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP
+-I
+D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP
+-I
 C:\Programs\IAR Arm\arm\inc
 -I
 C:\Programs\IAR Arm\arm\inc\c
@@ -51,6 +55,10 @@ D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\AbstractHardware\Registe
 D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\Common\Observer
 -I
 D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\settings
+-I
+D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP
+-I
+D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

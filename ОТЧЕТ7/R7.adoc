@@ -1,162 +1,334 @@
- :imagesdir: R7IM
+:imagesdir: R7IM
 
 = Отчет №7
 
-image::Figure2.png[]
-
-Класс АЦП:
+HardwareADC.hpp:
 
 [source, Cpp]
 
 ----
-class ADC
+#include "adc1registers.hpp" //for ADC1
+#include "adccommonregisters.hpp" //for ADCCommon
+
+enum class Resolution
 {
+  Bits12,
+  Bits10,
+  Bits8,
+  Bits6
+};
+
+struct IHardwareADC
+{
+ virtual void On() = 0 ;
+ virtual void Off() = 0 ;
+ virtual void Start() = 0 ;
+ virtual bool IsReady() = 0 ;
+ virtual uint32_t Get() = 0 ;
+ virtual void TSEnable() = 0 ;
+ virtual void Config(Resolution resolution) = 0;
+ virtual void SCMode() = 0;
+} ;
+
+
+template <class ADCModule>
+class HardwareADC : public IHardwareADC
+{
+public:
+ void On() override
+ {
+   ADCModule::CR2::ADON::Enable::Set();
+ }
+ void Off() override
+ {
+   ADCModule::CR2::ADON::Disable::Set();
+ }
+ void Start() override
+ {
+   ADCModule::CR2::SWSTART::On::Set();
+ }
+ bool IsReady() override
+ {
+   return ADCModule::SR::EOC::ConversionComplete::IsSet();
+ }
+ uint32_t Get() override
+ {
+   return ADCModule::DR::Get();
+ }
+ void TSEnable() override
+ {
+   ADC_Common::CCR::TSVREFE::Enable::Set();
+ }
+ void Config(Resolution resolution) override
+ {
+   switch (resolution)
+   {
+   case Resolution::Bits12:
+   ADCModule:: CR1:: RES:: Bits12::Set();
+   break;
+   
+   case Resolution::Bits10:
+   ADCModule:: CR1:: RES:: Bits10:: Set();
+   break;
+   
+   case Resolution::Bits8:
+   ADCModule:: CR1:: RES:: Bits8:: Set();
+   break;
+   
+   case Resolution::Bits6:
+   ADCModule:: CR1:: RES:: Bits6:: Set();
+   break;
+   
+   default:
+   ADCModule:: CR1:: RES:: Bits12::Set();
+   break;    
+   }
+ }
+ void SCMode() override
+ {
+  ADCModule::CR2::CONT::SingleConversion::Set();
+  ADCModule::CR2::EOCS::SingleConversion::Set(); 
+ }
+}
+;
+----
+
+ADC.hpp:
+
+[source, Cpp]
+----
+struct IADC
+{
+ virtual void On() = 0 ;
+ virtual void Off() = 0 ;
+ virtual void Start() = 0 ;
+ virtual bool IsReady() = 0 ;
+ virtual uint32_t Get() = 0 ;
+ virtual void TSEnable() = 0 ;
+ virtual void Config(Resolution resolution) = 0;
+ virtual void SCMode () = 0;
+} ;
+
+
+class ADC: public IADC
+{
+private:
+  IHardwareADC& hwADC ; 
   
 public:
-  void Start() 
+  ADC(IHardwareADC& adc): hwADC(adc) {};
+  void On()  override
   {
+     hwADC.On()  ;
+  }
+  void Off()  override 
+  {
+    hwADC.Off() ;
+  }
+ void Start() override
+ {
+   hwADC.Start() ;
+ }
+ bool IsReady() override
+ {
+    return hwADC.IsReady() ;
+ }
+ uint32_t Get() override
+ {
+    return hwADC.Get() ;
+ }
+ void TSEnable() override
+ {
+   hwADC.TSEnable() ;
+ }
+ void Config(Resolution resolution) override
+ {
+   hwADC.Config(resolution);
+ }
+ void SCMode() override
+ {
+  hwADC.SCMode();
+ }
+} ;
+----
+
+ADCCalibration.hpp
+
+[source, Cpp]
+----
+class Calibration
+{
+private:
+  float Cal1;
+  float Cal2;
+  volatile uint16_t *tsCal1Pointer = reinterpret_cast<volatile uint16_t*>(0x1FFF7A2C) ;
+  volatile uint16_t *tsCal2Pointer = reinterpret_cast<volatile uint16_t*>(0x1FFF7A2E) ;
+  uint16_t tsCal132 = (*tsCal1Pointer);
+  uint16_t tsCal232 = (*tsCal2Pointer);
+  float tsCal1 = tsCal132; 
+  float tsCal2 = tsCal232;
+  volatile uint16_t *VddaCalPointer = reinterpret_cast<volatile uint16_t*>(0x1FFF7A2A) ;
+  uint16_t VddaCal32 = (*VddaCalPointer);
+  float VddaCal = VddaCal32;
+  IADC& myADC;
+
+public:
+ Calibration(IADC& adc): myADC(adc)
+ {
+   myADC.On();
+   myADC.TSEnable();
+   myADC.Config(Resolution::Bits12);
+   myADC.SCMode();
+ };
+  
+public:
+  float GetCal1() 
+  { 
+  ADC1::SQR1::L::Conversions1::Set();
+  ADC1::SQR3::SQ1::Channel17::Set();
+  ADC1::SQR3::SQ2::Channel18::Set();
+  ADC1::SMPR1::SMP18::Cycles84::Set();
+  uint32_t Vdda = 0U ;
+  myADC.Start();
+  while(!myADC.IsReady()){};
+  Vdda = myADC.Get(); //Get data from ADC;
+  Cal1 = (110-30)*VddaCal/(Vdda*(tsCal2-tsCal1));
+  return Cal1;
+  }
+  
+  float GetCal2() 
+  {
+    Cal2 =  30 - (110-30)*tsCal1/(tsCal2-tsCal1);
+    return Cal2;
+  }
+}
+;
+----
+
+ADCTemperature.hpp
+
+[source, Cpp]
+----
+struct ITemperature
+{
+ virtual float Get() = 0 ;
+ virtual float Calculate(float code) = 0 ;
+} ;
+ 
+ 
+class Temperature: public ITemperature
+{
+private:
+  float temperature ;
+  float Cal1;
+  float Cal2;
+  
+public:
+  Temperature(float K1, float B1): Cal1(K1), Cal2(B1){} ;
+
+  float Get()  override 
+  {
+    return temperature;
+  }
+  float Calculate(float code) override
+  {
+    temperature = Cal1*code + Cal2;
+  }
+};
+----
+
+
+ADCTemperatureMeasurement:
+
+[source, Cpp]
+----
+#include <iostream>
+
+class Measure
+{
+private:
+ IADC& myADC;
+ ITemperature& temperature;
+
+public:
+ Measure(IADC& adc, ITemperature& temp): myADC(adc), temperature(temp)
+ {
+  myADC.On();
+  myADC.TSEnable();
+  myADC.Config(Resolution::Bits12);
+  myADC.SCMode();
+  ADC1::SQR1::L::Conversions1::Set();
+  ADC1::SQR3::SQ1::Channel18::Set();
+ };
+
+void Measurement()
+ {
+  myADC.Start();
+  for(;;)  
+  {
+    myADC.Start();
+    while(!myADC.IsReady()){};
+    uint32_t code = myADC.Get();
+    temperature.Calculate(static_cast<float>(code)) ;
+    std::cout << "\nTemperature: " << temperature.Get() << std::endl ;
+  }
+}
+}
+;
+----
+
+main:
+
+[source, Cpp]
+----
+#include "HardwareADC.hpp" 
+#include "ADC.hpp" 
+#include "ADCTemperature.hpp" 
+#include "ADCTemperatureMeasurement.hpp" 
+#include "ADCCalibration.hpp" 
+#include "adc1registers.hpp" //for ADC1
+#include "adccommonregisters.hpp" //for ADCCommon
+#include "rccregisters.hpp"    //for RCC
+#include "tim2registers.hpp"   //for TIM2
+#include <iostream>
+
+extern "C"
+{
+int __low_level_init(void)
+{
+  
+  //Switch on external 8 MHz oscillator
   RCC::CR::HSEON::On::Set();
   while(!RCC::CR::HSERDY::Ready::IsSet())
-  {}; 
+  {};
+  //Switch system clock on external oscillator
   RCC::CFGR::SW::Hse::Set();
   while (!RCC::CFGR::SWS::Hse::IsSet())
   {};
+  //Switch on clock on ADC1
   RCC::APB2ENR::ADC1EN::Enable::Set();
-  ADC1::CR2::ADON::Enable::Set();
-  }
-  void TSEnable() 
-  {
-   ADC_Common::CCR::TSVREFE::Enable::Set();
-   ADC1::CR1::RES::Bits12::Set();
-  ADC1::CR2::CONT::SingleConversion::Set();
-  ADC1::CR2::EOCS::SingleConversion::Set();   
-  }
-  void VSEnable() 
-  {
-  RCC::AHB1ENR::GPIOAEN::Enable::Set();
-  GPIOA::MODER::MODER0::Analog::Set();
-  ADC1::CR1::RES::Bits12::Set();
-  ADC1::CR2::CONT::SingleConversion::Set();
-  ADC1::CR2::EOCS::SingleConversion::Set();   
-  }
+
+  // Set laentgh of conversion sequence
+  ADC1::SQR1::L::Conversions1::Set(); //temperature & voltage
+  // Set 84 cycles sample rate for channels
+  ADC1::SMPR1::SMP18::Cycles3::Set();
+  
+  return 1;
 }
-;
-----
-
-Класс датчика температуры
-
-[source, Cpp]
-----
-class TemperatureSensor
-{
-public:
-  void Code() 
-  {
-      ADC1::SQR1::L::Conversions1::Set();
-  ADC1::SQR3::SQ2::Channel18::Set();
-  ADC1::SMPR1::SMP18::Cycles84::Set();
-    uint32_t ADC_Code = 0U ;
-    ADC1::CR2::SWSTART::On::Set();
-    while(!ADC1::SR::EOC::ConversionComplete::IsSet())
-    {};
-    ADC_Code =  ADC1::DR::Get(); //Get data from ADC;
-    cout << "\nTemperature data from ADC: " << ADC_Code << endl ; 
-  }
-  void Temperature() 
-  {
-  ADC1::SQR1::L::Conversions2::Set();
-  ADC1::SQR3::SQ1::Channel17::Set();
-  ADC1::SQR3::SQ2::Channel18::Set();
-  ADC1::SMPR1::SMP17::Cycles84::Set();
-  ADC1::SMPR1::SMP18::Cycles84::Set();
-  ADC1::CR1::SCAN::Enable::Set();
-   constexpr size_t tsCal1Addr = 0x1FFF7A2C;
-   constexpr size_t tsCal2Addr =  0x1FFF7A2E; 
-   constexpr size_t VddaCalAddr =  0x1FFF7A2A; 
-   volatile uint16_t *tsCal1Pointer = reinterpret_cast<volatile uint16_t*>(tsCal1Addr) ;
-   volatile uint16_t *tsCal2Pointer = reinterpret_cast<volatile uint16_t*>(tsCal2Addr) ;
-   uint16_t tsCal132 = (*tsCal1Pointer);
-   uint16_t tsCal232 = (*tsCal2Pointer);
-   float tsCal1 = tsCal132; 
-   float tsCal2 = tsCal232;
-   volatile uint16_t *VddaCalPointer = reinterpret_cast<volatile uint16_t*>(VddaCalAddr) ;
-   uint16_t VddaCal32 = (*VddaCalPointer);
-   float VddaCal = VddaCal32;
-   uint32_t ADC_Code = 0U ; //for getting reference voltage data from ADC
-   uint32_t Vdda = 0U ; //for getting reference voltage data from ADC
-   float temperature = 0.0F ;
-    float DEGREE_30 = 30.0F;
-    ADC1::CR2::SWSTART::On::Set();
-    while(!ADC1::SR::EOC::ConversionComplete::IsSet())
-    {};
-    Vdda =  ADC1::DR::Get(); 
-    while(!ADC1::SR::EOC::ConversionComplete::IsSet())
-    {};
-    ADC_Code =  ADC1::DR::Get();
-    temperature = ADC_Code * (110-30)*VddaCal/(Vdda*(tsCal2-tsCal1)) + DEGREE_30 - (110-30)*tsCal1/(tsCal2-tsCal1) ; //Convert ADC counts to temperature
-    cout << "\nTemperature: " << temperature << endl ; 
-  }
 }
-;
-----
 
-Класс датчика напряжения
-
-[source, Cpp]
-----
-class VoltageSensor
-{
-public:
-  void Code() 
-  {
-  ADC1::SQR1::L::Conversions1::Set();
-  ADC1::SQR3::SQ1::Channel0::Set();
-  ADC1::SMPR2::SMP0::Cycles84::Set();
-  std::uint32_t data = 0U ;
-  ADC1::CR2::SWSTART::On::Set();
-  while(!ADC1::SR::EOC::ConversionComplete::IsSet())
- {};
-  data =   ADC1::DR::Get(); //Get data from ADC;
-  cout << "\nVoltage data from ADC " << data << endl ;
-  }
-  void Voltage() 
-  {
-  ADC1::SQR1::L::Conversions1::Set();
-  ADC1::SQR3::SQ1::Channel0::Set();
-  ADC1::SMPR2::SMP0::Cycles84::Set();
-  constexpr float B2 = 0 ;//25.0F - 0.76F/0.0025F ;// see datacheet (page 226) and calculate B coeficient here ;
-  constexpr float K2 = 3.3F/4096 ;//3.3F/(4096.0F*0.0025F); // see datcheet  (page 226) and calculate K coeficient here ; 
-  std::uint32_t data = 0U ;
-  float voltage = 0.0F ;
-  ADC1::CR2::SWSTART::On::Set();
-  while(!ADC1::SR::EOC::ConversionComplete::IsSet())
- {};
-  data =   ADC1::DR::Get(); //Get data from ADC;
-  voltage = data * K2 + B2 ; //Convert ADC counts to temperature      
-  cout << "\nVoltage: " << voltage << endl ; 
-  }
-}
-;
-----
-
-Проверка:
-
-[source, Cpp]
-----
 int main()
 {
-  ADC ADC1;
-  ADC1.Start();
-  ADC1.TSEnable();
-  ADC1.VSEnable();
-  TemperatureSensor Sensor1;
-  Sensor1.Temperature();
-  Sensor1.Code();
-  VoltageSensor Sensor2;
-  Sensor2.Code();
-  Sensor2.Voltage();
-  return 0;
-}
+  HardwareADC<ADC1> hwAdc ;
+  ADC adc(hwAdc);
+  
+  Calibration Calibration1(adc);
+  float tsCal1 = Calibration1.GetCal1();
+  float tsCal2 = Calibration1.GetCal2();
+  Temperature temp(tsCal1, tsCal2);    
+  Measure  Measure1(adc, temp) ;
+  Measure1.Measurement() ;
+};
 ----
 
 image::Figure1.png[]
