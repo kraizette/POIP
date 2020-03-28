@@ -1,53 +1,47 @@
-struct IADC
-{
- virtual void On() = 0 ;
- virtual void Off() = 0 ;
- virtual void Start() = 0 ;
- virtual bool IsReady() = 0 ;
- virtual uint32_t Get() = 0 ;
- virtual void TSEnable() = 0 ;
- virtual void Config(Resolution resolution) = 0;
- virtual void SCMode () = 0;
-} ;
+#ifndef ADC_HPP
+#define ADC_HPP
+#include "IADC.hpp"
 
-
+template <typename hwADC>
 class ADC: public IADC
-{
-private:
-  IHardwareADC& hwADC ; 
-  
+{  
 public:
-  ADC(IHardwareADC& adc): hwADC(adc) {};
   void On()  override
   {
-     hwADC.On()  ;
+     hwADC::On()  ;
   }
   void Off()  override 
   {
-    hwADC.Off() ;
+    hwADC::Off() ;
   }
  void Start() override
  {
-   hwADC.Start() ;
+   hwADC::Start() ;
  }
  bool IsReady() override
  {
-    return hwADC.IsReady() ;
+    return hwADC::IsReady() ;
  }
  uint32_t Get() override
  {
-    return hwADC.Get() ;
+    return hwADC::Get() ;
  }
  void TSEnable() override
  {
-   hwADC.TSEnable() ;
+   hwADC::TSEnable() ;
+ }
+ void SCMode () override
+ {
+   hwADC::SCMode();
  }
  void Config(Resolution resolution) override
  {
-   hwADC.Config(resolution);
+   hwADC::Config(resolution);
  }
- void SCMode() override
+ void SetChannels(const ChannelsArray &channelsList,int count) override
  {
-  hwADC.SCMode();
+   hwADC::SetChannels(channelsList, count) ;
  }
 } ;
+
+#endif

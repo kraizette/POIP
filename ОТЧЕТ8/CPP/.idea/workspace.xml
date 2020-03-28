@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Unnamed" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="untitled" targetName="untitled_srec" />
+      <config projectName="untitled" targetName="untitled" />
+      <config projectName="untitled" targetName="flash" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="MinSizeRel-Cygwin" CONFIG_NAME="MinSizeRel" TOOLCHAIN_NAME="Cygwin" />
+      <configuration PROFILE_NAME="Debug-MinGW" CONFIG_NAME="Debug" TOOLCHAIN_NAME="MinGW" />
+      <configuration PROFILE_NAME="Release-IAR" CONFIG_NAME="Release" TOOLCHAIN_NAME="IAR" />
+      <configuration PROFILE_NAME="Default-Cygwin IAR" TOOLCHAIN_NAME="Cygwin IAR" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5335a5d7-2ea1-4d0d-bfd4-dd1a3e5c554b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/flash.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/flash.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/flash.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/flash.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/ASM.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/Rtos/FreeRtos/portable/IAR/ARM_CM4F/portasm.s.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled_srec.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled_srec.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled_srec.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled_srec.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IAR-ASM.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IAR-C.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IAR-CXX.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IAR-DetermineCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IAR-FindBinUtils.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IAR.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/untitled.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/untitled.srec" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default-Cygwin IAR" />
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lamer0k &lt;sergey.kolody@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Unnamed" pattern="file[untitled]:AHardware/*||file[untitled]:Common/*||file[untitled]:MyTasks/*||file[untitled]:Rtos/wrapper/*||file:main.cpp||file:main.hpp||file:startupF411RE.cpp" />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1YiX7LTuQEc5mHRordyVVCyZsFs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.splitter.proportion" value="0.11433172" />
+  </component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergey\CLionProjects\untitled\Application\Diagnostic" />
+      <recent name="C:\Users\Sergey\CLionProjects\untitled\Application" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.untitled">
+    <configuration name="flash" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="flash" CONFIG_NAME="Debug-MinGW">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="untitled" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="untitled">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="untitled_srec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled_srec" CONFIG_NAME="Debug-MinGW">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.flash" />
+      <item itemvalue="CMake Application.untitled" />
+      <item itemvalue="CMake Application.untitled_srec" />
+      <item itemvalue="GDB Remote Debug.Test" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5335a5d7-2ea1-4d0d-bfd4-dd1a3e5c554b" name="Default Changelist" comment="" />
+      <created>1533483838207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533483838207</updated>
+      <workItem from="1533483844050" duration="105000" />
+      <workItem from="1533483970190" duration="1780000" />
+      <workItem from="1533959738061" duration="1238000" />
+      <workItem from="1533960997194" duration="75000" />
+      <workItem from="1533961285573" duration="33863000" />
+      <workItem from="1534020843776" duration="4156000" />
+      <workItem from="1534064797947" duration="7668000" />
+      <workItem from="1534528223158" duration="348000" />
+      <workItem from="1534530736053" duration="14686000" />
+      <workItem from="1534581336466" duration="4279000" />
+      <workItem from="1534585636292" duration="33000" />
+      <workItem from="1534585783444" duration="678000" />
+      <workItem from="1534586512260" duration="26000" />
+      <workItem from="1534586566889" duration="29690000" />
+      <workItem from="1534682291284" duration="12002000" />
+      <workItem from="1534784586956" duration="7990000" />
+      <workItem from="1535036507672" duration="2482000" />
+      <workItem from="1535121196479" duration="21094000" />
+      <workItem from="1535191947921" duration="1469000" />
+      <workItem from="1535265373919" duration="919000" />
+      <workItem from="1535267475887" duration="5825000" />
+      <workItem from="1535359838419" duration="14174000" />
+      <workItem from="1535445087142" duration="699000" />
+      <workItem from="1535445856867" duration="531000" />
+      <workItem from="1535446404735" duration="31000" />
+      <workItem from="1535446452916" duration="13949000" />
+      <workItem from="1535519726678" duration="6089000" />
+      <workItem from="1535607682906" duration="8100000" />
+      <workItem from="1535636592172" duration="11526000" />
+      <workItem from="1535705579897" duration="3863000" />
+      <workItem from="1535735814585" duration="701000" />
+      <workItem from="1535782852911" duration="5408000" />
+      <workItem from="1535812725240" duration="7396000" />
+      <workItem from="1535891625154" duration="3961000" />
+      <workItem from="1536340869849" duration="4649000" />
+      <workItem from="1538666957133" duration="360000" />
+      <workItem from="1538667611607" duration="676000" />
+      <workItem from="1539363769871" duration="929000" />
+      <workItem from="1545487396127" duration="8597000" />
+      <workItem from="1583426221610" duration="1660000" />
+      <workItem from="1583428099606" duration="357000" />
+      <workItem from="1583428508719" duration="2000" />
+      <workItem from="1583431216090" duration="1591000" />
+    </task>
+    <task id="LOCAL-00001" summary="update file">
+      <created>1535140998866</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535140998866</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update file">
+      <created>1535141901184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535141901184</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update file">
+      <created>1535142606164</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1535142606164</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update file">
+      <created>1535142845716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535142845716</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update file">
+      <created>1535192177376</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1535192177376</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update file">
+      <created>1535267692184</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1535267692184</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add supporting of dynamic created Queue for FreeRTOS">
+      <created>1535307484770</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1535307484770</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add supporting of dynamic created Queue for FreeRTOS">
+      <created>1535361209639</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1535361209640</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add supporting of dynamic created Queue for FreeRTOS">
+      <created>1535383878113</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535383878113</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add supporting of dynamic created Queue for FreeRTOS">
+      <created>1535385122086</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535385122086</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add supporting of dynamic created Queue for FreeRTOS">
+      <created>1535466383162</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535466383180</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add supporting of dynamic created Queue for FreeRTOS">
+      <created>1535467818759</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1535467818759</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add supporting of dynamic created Queue for FreeRTOS">
+      <created>1535475655826</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1535475655826</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update Ports classes">
+      <created>1535635299557</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535635299557</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update Ports classes">
+      <created>1535652317888</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535652317888</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update Ports classes">
+      <created>1535652443947</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535652443947</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update Ports classes">
+      <created>1535654355676</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1535654355676</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update Ports classes">
+      <created>1535654396745</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1535654396745</updated>
+    </task>
+    <task id="LOCAL-00019" summary="CleanUp">
+      <created>1535786555654</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1535786555654</updated>
+    </task>
+    <task id="LOCAL-00020" summary="CleanUp">
+      <created>1535894466600</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535894466600</updated>
+    </task>
+    <task id="LOCAL-00021" summary="CleanUp">
+      <created>1535894958665</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535894958665</updated>
+    </task>
+    <task id="LOCAL-00022" summary="CleanUp">
+      <created>1535895100461</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1535895100461</updated>
+    </task>
+    <task id="LOCAL-00023" summary="CleanUp">
+      <created>1583426841790</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583426841790</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update file" />
+    <MESSAGE value="Add supporting of dynamic created Queue for FreeRTOS" />
+    <MESSAGE value="Update Ports classes" />
+    <MESSAGE value="CleanUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="CleanUp" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583426468348">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583426468348" />
+    <state x="679" y="261" key="#flash" timestamp="1583426338755">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="679" y="261" key="#flash/0.0.1920.1080@0.0.1920.1080" timestamp="1583426338755" />
+    <state x="669" y="269" key="#untitled_srec" timestamp="1583430820003">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="669" y="269" key="#untitled_srec/0.0.1920.1080@0.0.1920.1080" timestamp="1583430820003" />
+    <state x="585" y="134" key="CommitChangelistDialog2" timestamp="1583427935228">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="585" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583427935228" />
+    <state x="427" y="307" key="FileChooserDialogImpl" timestamp="1583431434554">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="427" y="307" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583431434554" />
+    <state x="461" y="182" key="SettingsEditor" timestamp="1583431976361">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583431976361" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1583427952275">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583427952275" />
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1583431230210">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583431230210" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CLion_Remote">
+        <watch expression="event" language="ObjectiveC" />
+        <watch expression="myTask" language="ObjectiveC" />
+        <watch expression="queue" />
+        <watch expression="pxQueue" />
+        <watch expression="eventHandle" language="ObjectiveC" />
+        <watch expression="port" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>queue.buffer._Elems[4]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>eventHandle</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Rtos</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>myTask</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>event</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>queue.buffer._Elems[4]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>myTask.button.port.MODER</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>Unnamed</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="Unnamed" />
+          </order>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

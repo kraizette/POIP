@@ -1,0 +1,132 @@
+mytask.pbi: \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks\mytask.cpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks/mytask.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks/../Rtos/wrapper/thread.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper/FreeRtos/rtosdefs.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/include/FreeRtos.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\stddef.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\yvals.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Defaults.h \
+  C:\\Programs\\IAR\ Arm\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\ysizet.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\stdint.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/..\FreeRTOSConfig.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/projdefs.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/portable.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/deprecated_definitions.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portmacro.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\intrinsics.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\iccarm_builtin.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\iar_intrinsics_common.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/mpu_wrappers.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/include/task.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/list.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/include/semphr.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/queue.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/include/queue.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/include/timers.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/task.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/include/event_groups.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/timers.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/portable/IAR/ARM_CM4F/portmacro.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../FreeRtos/FreeRTOSConfig.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper\FreeRtos/../../../Common/susudefs.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\wrapper/../../Common/susudefs.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks/../Application/userbutton.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Common\utils.hpp \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cassert \
+  C:\Programs\IAR\ Arm\arm\inc\c\assert.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/../AHardware/GpioPort/gpioports.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\AHardware\GpioPort/gpioport.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\AHardware\GpioPort/../../Common/susudefs.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\AHardware\GpioPort/../../Common/utils.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\AHardware\GpioPort/iport.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\AHardware\GpioPort/../../CMSIS/stm32f411xe.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\CMSIS/core_cm4.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\CMSIS\core_cmInstr.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\cmsis_iar.h \
+  C:\Programs\IAR\ Arm\arm\inc\c/iccarm_builtin.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\CMSIS\core_cmFunc.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\CMSIS\core_cm4_simd.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\CMSIS/system_stm32f4xx.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\AHardware\GpioPort/../../Common/singleton.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/../Common/singleton.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/../AHardware/GpioPort/iport.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/../Common/susudefs.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks/../CMSIS/stm32f411xe.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\array \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\algorithm \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xmemory \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xmemory0 \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstdint \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstdlib \
+  C:\Programs\IAR\ Arm\arm\inc\c\stdlib.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product_stdlib.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\limits \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cfloat \
+  C:\Programs\IAR\ Arm\arm\inc\c\float.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\climits \
+  C:\Programs\IAR\ Arm\arm\inc\c\limits.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cmath \
+  C:\Programs\IAR\ Arm\arm\inc\c\math.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_float_setup.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\xtgmath.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xtr1common \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cwchar \
+  C:\Programs\IAR\ Arm\arm\inc\c\wchar.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xstddef \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstddef \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\initializer_list \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\new \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\exception \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xxexception \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\type_traits \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xutility \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\utility \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\iosfwd \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstdio \
+  C:\Programs\IAR\ Arm\arm\inc\c\stdio.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cstring \
+  C:\Programs\IAR\ Arm\arm\inc\c\string.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product_string.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\xatomic.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\iterator \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\istream \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\ostream \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\ios \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xlocnum \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\streambuf \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xiosbase \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xlocale \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\clocale \
+  C:\Programs\IAR\ Arm\arm\inc\c\locale.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\xctype.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\xlocale_lconv.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cwctype \
+  C:\Programs\IAR\ Arm\arm\inc\c\wctype.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\stdexcept \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xstring \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\typeinfo \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xlocinfo \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cctype \
+  C:\Programs\IAR\ Arm\arm\inc\c\ctype.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\ctime \
+  C:\Programs\IAR\ Arm\arm\inc\c\time.h \
+  C:\Programs\IAR\ Arm\arm\inc\c/time32.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\system_error \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\cerrno \
+  C:\Programs\IAR\ Arm\arm\inc\c\errno.h \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\tuple \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks/../Rtos/wrapper/mailbox.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks/../Rtos/wrapper/event.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\MyTasks/../Application/ledscontroller.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/ledsdriver.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/leds.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\AHardware\GpioPort/gpioports.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/ledsmodes.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Application/ledsmode.hpp \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Common\singleton.hpp \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\functional \
+  C:\Programs\IAR\ Arm\arm\inc\cpp\xfunctional
