@@ -1,159 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>3491463593</fileChecksum>
+    <fileChecksum>446720799</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\FieldValues\adc1fieldvalues.hpp</file>
             <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\FieldValues\adccommonfieldvalues.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\climits</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\ctime</file>
-            <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_nc.a</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cfloat</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstdlib</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
-            <file>$PROJ_DIR$\HPP\ADCCalibration.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\c\wctype.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstddef</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xmemory0</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\istream</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xstddef</file>
-            <file>$PROJ_DIR$\Debug\List\LAB.map</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstdint</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\LAB.out</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\exception</file>
-            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\stdexcept</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\clocale</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\time.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\initializer_list</file>
-            <file>$PROJ_DIR$\Common\susudefs.hpp</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cwchar</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\iostream</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cmath</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xutility</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\FieldValues\adc1fieldvalues.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADCMeasurement.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADCCalibration.__cstat.et</file>
+            <file>$PROJ_DIR$\HPP\IVariable.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
             <file>$TOOLKIT_DIR$\inc\cpp\xstring</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\float.h</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\rccregisters.hpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\adccommonregisters.hpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\adc1registers.hpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\FieldValues\tim2fieldvalues.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\ostream</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\tim2registers.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xlocnum</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\register.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\new</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\accessmode.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\typeinfo</file>
-            <file>$PROJ_DIR$\HPP\ADCTemperatureMeasurement.hpp</file>
-            <file>$PROJ_DIR$\HPP\HardwareADC.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\fieldvaluebase.hpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\registerbase.hpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\registertype.hpp</file>
-            <file>$PROJ_DIR$\HPP\ADCTemperature.hpp</file>
-            <file>$PROJ_DIR$\main.cpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\registerfield.hpp</file>
-            <file>$PROJ_DIR$\AbstractHardware\Registers\fieldvalue.hpp</file>
-            <file>$PROJ_DIR$\HPP\ADC.hpp</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cwctype</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\system_error</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xtr1common</file>
-            <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\xctype.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xiosbase</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstring</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\LAB.pbd</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\type_traits</file>
-            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\iostream</file>
             <file>$TOOLKIT_DIR$\inc\cpp\cerrno</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstdio</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cassert</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\utility</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\streambuf</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xlocinfo</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xlocale</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\typeinfo</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
             <file>$TOOLKIT_DIR$\config\linker\ST\stm32f411xE.icf</file>
             <file>$TOOLKIT_DIR$\inc\cpp\xxexception</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cctype</file>
+            <file>$TOOLKIT_DIR$\inc\c\float.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\array</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\tuple</file>
+            <file>$PROJ_DIR$\HPP\IADC.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ostream</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\type_traits</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADCMeasurement.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocnum</file>
+            <file>$PROJ_DIR$\HPP\ADCCalibration.cpp</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\iterator</file>
+            <file>$TOOLKIT_DIR$\inc\c\xctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\new</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xmemory</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\utility</file>
+            <file>$TOOLKIT_DIR$\inc\c\xatomic.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\algorithm</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADCMeasurement.o</file>
+            <file>$PROJ_DIR$\HPP\ADCVoltage.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdio</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocale</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADCCalibration.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocinfo</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\LAB.pbd</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\limits</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\stdexcept</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\streambuf</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cwchar</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cassert</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\AbstractHardware\Atomic\atomicutils.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xtr1common</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xiosbase</file>
+            <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xutility</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cmath</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstring</file>
+            <file>$PROJ_DIR$\HPP\ADCMeasurement.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\system_error</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cwctype</file>
             <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
             <file>$TOOLKIT_DIR$\inc\cpp\ios</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\xatomic.h</file>
-            <file>$PROJ_DIR$\AbstractHardware\Atomic\atomicutils.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cctype</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\adc1registers.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\adccommonregisters.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\FieldValues\tim2fieldvalues.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\rccregisters.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\STM32F411\tim2registers.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\registerbase.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\registerfield.hpp</file>
+            <file>$PROJ_DIR$\HPP\ADCTemperature.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\accessmode.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\fieldvalue.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\fieldvaluebase.hpp</file>
+            <file>$PROJ_DIR$\HPP\ADCTemperatureMeasurement.hpp</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\registertype.hpp</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$PROJ_DIR$\Debug\Exe\LAB.out</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdlib</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cfloat</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\AbstractHardware\Registers\register.hpp</file>
+            <file>$PROJ_DIR$\Common\susudefs.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\HPP\ADC.hpp</file>
+            <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_nc.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\HPP\ADCMeasurement.cpp</file>
+            <file>$PROJ_DIR$\HPP\ADCCalibration.hpp</file>
+            <file>$PROJ_DIR$\HPP\HardwareADC.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\climits</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdint</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$TOOLKIT_DIR$\inc\cpp\iosfwd</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\limits</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\exception</file>
+            <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\initializer_list</file>
+            <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\wctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\clocale</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xmemory0</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+            <file>$PROJ_DIR$\Debug\List\LAB.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstddef</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xstddef</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\istream</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ctime</file>
+            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 30 24</file>
+                    <file> 114 79</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\LAB.out</name>
+            <name>$PROJ_DIR$\HPP\ADCCalibration.cpp</name>
             <outputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 24</file>
+                    <name>BICOMP</name>
+                    <file> 39</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 6</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 93 22 27 99 5 12 6</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.cpp</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 22</file>
+                    <file> 99</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 35</file>
+                    <file> 112</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 39</file>
+                    <file> 105</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 61 50 1 70 18 62 82 11 46 29 9 10 64 84 23 8 97 40 37 75 57 38 69 88 79 101 26 20 65 66 55 49 2 71 67 60 42 21 52 98 54 3 28 43 78 25 14 90 80 92 81 74 95 34 63 77 58 72 17 33 31 94 45 19 103 7 47 41 76 56 44 89 102 87 13 100 59 91 96 85 4 36 32 73 86 15 16 48 0 53 51</file>
+                    <file> 91 65 1 74 116 35 51 85 41 88 106 93 75 21 118 80 62 95 107 53 73 84 71 50 45 52 97 117 70 77 83 66 0 10 119 20 63 23 92 104 57 27 98 103 48 54 38 58 13 115 110 122 26 43 61 109 47 102 15 9 111 46 81 16 49 55 28 56 30 100 37 94 31 12 40 64 36 120 113 121 60 11 108 17 32 29 25 18 86 19 72 7 34 59 90 68 2 69 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\LAB.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 114</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 14 33 99 101 42 87 96 82</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\HPP\ADCMeasurement.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 59 10 119 20 63 23 92 104 51 85 41 88 106 57 27 98 103 53 80 62 93 95 48 54 38 58 13 115 110 122 26 43 61 109 47 102 118 116 35 107 15 21 9 111 97 117 46 81 16 49 55 28 56 30 100 37 94 31 12 40 64 36 120 113 121 60 11 108 19 91 65 1 74 75 73 84 71 50 45 52 70 77 83 66 0 17 32 29 25 18 7 90 86 5 4 8</file>
                 </tool>
             </inputs>
         </file>

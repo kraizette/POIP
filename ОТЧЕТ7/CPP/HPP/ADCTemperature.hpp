@@ -1,11 +1,8 @@
-struct ITemperature
-{
- virtual float Get() = 0 ;
- virtual float Calculate(float code) = 0 ;
-} ;
- 
- 
-class Temperature: public ITemperature
+#ifndef ADCTemperature_HPP
+#define ADCTemperature_HPP
+#include "IVariable.hpp"
+
+class Temperature: public IVariable
 {
 private:
   float temperature ;
@@ -22,5 +19,7 @@ public:
   float Calculate(float code) override
   {
     temperature = Cal1*code + Cal2;
+    return temperature;
   }
 };
+#endif

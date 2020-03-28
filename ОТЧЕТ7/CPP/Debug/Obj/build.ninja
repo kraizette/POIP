@@ -20,8 +20,9 @@ rule browsedata
 
 
 #Build steps
+build ADCMeasurement.pbi : index ADCMeasurement.xcl
 build main.pbi : index main.xcl
-build LAB.pbd : link main.pbi
+build LAB.pbd : link ADCMeasurement.pbi main.pbi
 build LAB.pbw : browsedata LAB.pbd
 
 

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <userOverrides>
     <override>
+        <path>D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\HPP\HardwareADC.hpp</path>
+        <encoding>UTF-8</encoding>
+    </override>
+    <override>
         <path>D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ7\CPP\main.cpp</path>
         <encoding>UTF-8</encoding>
     </override>

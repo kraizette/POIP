@@ -2741,6 +2741,12 @@
             <name>$PROJ_DIR$\HPP\ADC.hpp</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\HPP\ADCCalibration.hpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\HPP\ADCMeasurement.cpp</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\HPP\ADCTemperature.hpp</name>
         </file>
         <file>

@@ -1,0 +1,29 @@
+tasks.pbi: \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\tasks.c \
+  C:\Programs\IAR\ Arm\arm\inc\c\stdlib.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\ycheck.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\yvals.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Defaults.h \
+  C:\\Programs\\IAR\ Arm\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\ysizet.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product_stdlib.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\string.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\DLib_Product_string.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include\FreeRTOS.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\stddef.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\stdint.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/..\FreeRTOSConfig.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/projdefs.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/portable.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/deprecated_definitions.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portmacro.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\intrinsics.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\iccarm_builtin.h \
+  C:\Programs\IAR\ Arm\arm\inc\c\iar_intrinsics_common.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/mpu_wrappers.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include\task.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/list.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include\timers.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include/task.h \
+  D:\kraizette\STD\VII-VIII\POIP\PROJECTS\ОТЧЕТ8\CPP\Rtos\FreeRtos\include\StackMacros.h
